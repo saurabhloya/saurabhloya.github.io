@@ -1,11 +1,20 @@
-# Data Scientist
-
-#### Technical Skills: Python, SQL, AWS, Snowflake, MATLAB
+#### Skills:
+Languages: Python, Java, C/C++/C#, HTML, CSS, JavaScript, TypeScript, SQL, NoSQL, R
+Frameworks & Libraries: Power BI, Tableau, Flask, Numpy, Pandas, Spacy, PyTorch, Tensorflow, Keras, OpenCV, Rasa, Scikit-Learn, Matplotlib, Seaborn, Apache Airflow, Apache Spark, Angular, React Microsoft Office, Microsoft Excel, Kubernetes, Docker
+Tools & IDEs: Git, Visual Studio, Eclipse, Postman, JMeter, Jupyter Notebook
+Operating System and Platforms: Windows, Linux, MacOS, CentOS, AWS, Azure, Jira, Trello, Confluence
+Databases: MySQL, MongoDB, SQLite, Microsoft SQL Server, PostgreSQL
+Certification: AWS Certified Cloud Practitioner, Azure Fundamentals, Salesforce Developer Bootcamp
 
 ## Education
-- Ph.D., Physics | The University of Texas at Dallas (_May 2022_)								       		
-- M.S., Physics	| The University of Texas at Dallas (_December 2019_)	 			        		
-- B.S., Physics | The University of Texas at Dallas (_May 2017_)
+The University of Utah				               			          		       Aug 2023 – May 2025
+Master of Science in Computer Science | GPA: 3.9/4							 Salt Lake City, Utah, USA
+Coursework: Manage Data for ML, Deep Learning, Advanced Algorithm, Computer Architecture, Software and System Security
+
+MIT World Peace University								                     Aug 2017 – May 2021
+Bachelors of Technology in Computer Science and Engineering | GPA: 3.8/4		              	                                       Pune, India
+Coursework: Data Structures, Database Management System, Data Warehouse and Data Mining, Big Data Analytics, Machine Learning, Artificial Intelligence, Business Intelligence, Cloud Computing, UIUX, Finance and Costing.
+
 
 ## Work Experience
 **Data Scientist @ Toyota Financial Services (_June 2022 - Present_)**
