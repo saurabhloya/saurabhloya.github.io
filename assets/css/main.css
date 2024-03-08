@@ -986,6 +986,24 @@ input, select, textarea {
 					background-color: rgba(255, 255, 255, 0.175);
 				}
 
+				[data-tooltip] {
+					position: relative;
+					display: inline-block;
+				}
+				
+				[data-tooltip]:hover::after {
+					content: attr(data-tooltip);
+					position: absolute;
+					background-color: black;
+					color: white;
+					padding: 5px;
+					border-radius: 5px;
+					bottom: 100%;
+					left: 50%;
+					transform: translateX(-50%);
+					white-space: nowrap;
+				}
+
 /* Table */
 
 	.table-wrapper {
