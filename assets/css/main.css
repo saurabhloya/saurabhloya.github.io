@@ -1742,3 +1742,578 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* Skills Section */
+.skills-container {
+	margin: 2rem 0;
+}
+
+.skill-category {
+	margin-bottom: 2.5rem;
+}
+
+.skill-category h3 {
+	color: #ffffff;
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+	padding-bottom: 0.5rem;
+	width: fit-content;
+}
+
+.skill-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin-bottom: 1rem;
+}
+
+.skill-tag {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: solid 1px rgba(255, 255, 255, 0.3);
+	border-radius: 20px;
+	font-size: 0.8rem;
+	font-weight: 400;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	transition: all 0.3s ease;
+}
+
+.skill-tag.primary {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.5);
+	font-weight: 600;
+}
+
+.skill-tag:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.6);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced Project Cards */
+.project-card {
+	background-color: rgba(255, 255, 255, 0.05);
+	border: solid 1px rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	padding: 1.5rem;
+	margin-bottom: 2rem;
+	transition: all 0.3s ease;
+}
+
+.project-card:hover {
+	background-color: rgba(255, 255, 255, 0.08);
+	border-color: rgba(255, 255, 255, 0.2);
+	transform: translateY(-4px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-title {
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: #ffffff;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+
+.project-tech {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: 1rem 0;
+}
+
+.tech-tag {
+	display: inline-block;
+	padding: 0.3rem 0.8rem;
+	background-color: rgba(65, 105, 225, 0.2);
+	border: solid 1px rgba(65, 105, 225, 0.4);
+	border-radius: 15px;
+	font-size: 0.7rem;
+	font-weight: 500;
+	color: #87CEEB;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+}
+
+/* Enhanced Animations */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-in {
+	animation: fadeInUp 0.6s ease-out;
+}
+
+/* Improved Mobile Responsiveness */
+@media screen and (max-width: 736px) {
+	.skill-tags {
+		gap: 0.5rem;
+	}
+	
+	.skill-tag {
+		padding: 0.4rem 0.8rem;
+		font-size: 0.7rem;
+	}
+	
+	.project-card {
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.skill-tags {
+		justify-content: center;
+	}
+	
+	.skill-category h3 {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+/* Education Section */
+#intro .education-card {
+	background-color: rgba(255, 255, 255, 0.05) !important;
+	border: solid 1px rgba(255, 255, 255, 0.1) !important;
+	border-radius: 12px !important;
+	padding: 2.5rem !important;
+	margin-bottom: 3rem !important;
+	transition: all 0.4s ease !important;
+	position: relative !important;
+	overflow: hidden !important;
+}
+
+#intro .education-card::before {
+	content: '' !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	height: 3px !important;
+	background: linear-gradient(90deg, #4169E1, #87CEEB, #4169E1) !important;
+	opacity: 0 !important;
+	transition: opacity 0.3s ease !important;
+}
+
+#intro .education-card.masters::before {
+	background: linear-gradient(90deg, #FF6B6B, #4ECDC4, #45B7D1) !important;
+}
+
+#intro .education-card.bachelors::before {
+	background: linear-gradient(90deg, #96CEB4, #FFEAA7, #DDA0DD) !important;
+}
+
+#intro .education-card:hover {
+	background-color: rgba(255, 255, 255, 0.08) !important;
+	border-color: rgba(255, 255, 255, 0.2) !important;
+	transform: translateY(-4px) !important;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+}
+
+#intro .education-card:hover::before {
+	opacity: 1 !important;
+}
+
+/* Education Badge */
+#intro .education-badge {
+	position: absolute !important;
+	top: 1rem !important;
+	right: 1rem !important;
+	width: 50px !important;
+	height: 50px !important;
+	background: linear-gradient(135deg, #4169E1, #87CEEB) !important;
+	border-radius: 50% !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	box-shadow: 0 4px 15px rgba(65, 105, 225, 0.3) !important;
+	transition: all 0.3s ease !important;
+}
+
+#intro .education-card.masters .education-badge {
+	background: linear-gradient(135deg, #FF6B6B, #4ECDC4) !important;
+	box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3) !important;
+}
+
+#intro .education-card.bachelors .education-badge {
+	background: linear-gradient(135deg, #96CEB4, #FFEAA7) !important;
+	box-shadow: 0 4px 15px rgba(150, 206, 180, 0.3) !important;
+}
+
+#intro .badge-text {
+	color: #ffffff !important;
+	font-weight: 700 !important;
+	font-size: 0.8rem !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.1rem !important;
+}
+
+#intro .education-card:hover .education-badge {
+	transform: scale(1.1) rotate(5deg) !important;
+}
+
+#intro .education-header {
+	display: flex !important;
+	align-items: flex-start !important;
+	gap: 1.5rem !important;
+	margin-bottom: 1.5rem !important;
+}
+
+#intro .education-logo {
+	flex-shrink: 0 !important;
+	width: 80px !important;
+	height: 80px !important;
+	border-radius: 50% !important;
+	overflow: hidden !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	border: solid 2px rgba(255, 255, 255, 0.2) !important;
+}
+
+#intro .education-logo img {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover !important;
+	border-radius: 50% !important;
+}
+
+#intro .education-info {
+	flex: 1 !important;
+}
+
+/* Degree Header */
+#intro .degree-header {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+	margin-bottom: 0.5rem !important;
+	flex-wrap: wrap !important;
+	gap: 1rem !important;
+}
+
+#intro .education-info h3 {
+	color: #ffffff !important;
+	font-size: 1.4rem !important;
+	font-weight: 700 !important;
+	margin: 0 !important;
+	text-transform: none !important;
+	letter-spacing: 0.05rem !important;
+	line-height: 1.3 !important;
+}
+
+#intro .graduation-status {
+	padding: 0.3rem 0.8rem !important;
+	border-radius: 20px !important;
+	font-size: 0.75rem !important;
+	font-weight: 600 !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.1rem !important;
+	transition: all 0.3s ease !important;
+}
+
+#intro .graduation-status.current {
+	background: linear-gradient(135deg, #4ECDC4, #45B7D1) !important;
+	color: #ffffff !important;
+	box-shadow: 0 2px 10px rgba(78, 205, 196, 0.3) !important;
+}
+
+#intro .graduation-status.completed {
+	background: linear-gradient(135deg, #96CEB4, #FFEAA7) !important;
+	color: #2c3e50 !important;
+	box-shadow: 0 2px 10px rgba(150, 206, 180, 0.3) !important;
+}
+
+#intro .education-info h4 {
+	color: #87CEEB !important;
+	font-size: 1.1rem !important;
+	font-weight: 500 !important;
+	margin-bottom: 1rem !important;
+	text-transform: none !important;
+	letter-spacing: 0.05rem !important;
+}
+
+#intro .education-details {
+	display: flex !important;
+	flex-wrap: wrap !important;
+	gap: 1rem !important;
+	margin: 0 !important;
+}
+
+#intro .detail-item {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 0.3rem !important;
+	font-size: 0.9rem !important;
+	color: rgba(255, 255, 255, 0.8) !important;
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	padding: 0.3rem 0.8rem !important;
+	border-radius: 15px !important;
+	border: solid 1px rgba(255, 255, 255, 0.2) !important;
+	transition: all 0.3s ease !important;
+}
+
+#intro .detail-item:hover {
+	background-color: rgba(255, 255, 255, 0.15) !important;
+	border-color: rgba(255, 255, 255, 0.3) !important;
+	transform: translateY(-1px) !important;
+}
+
+/* Achievement Highlights */
+#intro .achievement-highlights {
+	display: flex !important;
+	flex-wrap: wrap !important;
+	gap: 0.8rem !important;
+	margin-top: 1rem !important;
+}
+
+#intro .achievement {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 0.4rem !important;
+	font-size: 0.85rem !important;
+	color: #87CEEB !important;
+	background: linear-gradient(135deg, rgba(135, 206, 235, 0.1), rgba(65, 105, 225, 0.1)) !important;
+	padding: 0.4rem 0.9rem !important;
+	border-radius: 20px !important;
+	border: solid 1px rgba(135, 206, 235, 0.3) !important;
+	font-weight: 500 !important;
+	transition: all 0.3s ease !important;
+}
+
+#intro .achievement:hover {
+	background: linear-gradient(135deg, rgba(135, 206, 235, 0.2), rgba(65, 105, 225, 0.2)) !important;
+	border-color: rgba(135, 206, 235, 0.5) !important;
+	transform: translateY(-1px) !important;
+	box-shadow: 0 2px 8px rgba(135, 206, 235, 0.2) !important;
+}
+
+#intro .coursework-section {
+	margin-top: 1.5rem !important;
+}
+
+#intro .coursework-section h4 {
+	color: #ffffff !important;
+	font-size: 1.1rem !important;
+	font-weight: 700 !important;
+	margin-bottom: 1.5rem !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.1rem !important;
+	border-bottom: solid 2px rgba(135, 206, 235, 0.5) !important;
+	padding-bottom: 0.5rem !important;
+	width: fit-content !important;
+	position: relative !important;
+}
+
+#intro .coursework-section h4::after {
+	content: '' !important;
+	position: absolute !important;
+	bottom: -2px !important;
+	left: 0 !important;
+	width: 30% !important;
+	height: 2px !important;
+	background: linear-gradient(90deg, #87CEEB, #4169E1) !important;
+}
+
+/* Specialization Grid */
+#intro .specialization-grid {
+	display: grid !important;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+	gap: 1.5rem !important;
+	margin-top: 1rem !important;
+}
+
+#intro .specialization-category {
+	background: rgba(255, 255, 255, 0.03) !important;
+	border: solid 1px rgba(255, 255, 255, 0.08) !important;
+	border-radius: 8px !important;
+	padding: 1.2rem !important;
+	transition: all 0.3s ease !important;
+}
+
+#intro .specialization-category:hover {
+	background: rgba(255, 255, 255, 0.06) !important;
+	border-color: rgba(255, 255, 255, 0.15) !important;
+	transform: translateY(-2px) !important;
+}
+
+#intro .specialization-category h5 {
+	color: #87CEEB !important;
+	font-size: 0.95rem !important;
+	font-weight: 600 !important;
+	margin-bottom: 0.8rem !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.05rem !important;
+}
+
+#intro .coursework-tags {
+	display: flex !important;
+	flex-wrap: wrap !important;
+	gap: 0.5rem !important;
+}
+
+#intro .course-tag {
+	display: inline-block !important;
+	padding: 0.4rem 0.9rem !important;
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	border: solid 1px rgba(255, 255, 255, 0.3) !important;
+	border-radius: 18px !important;
+	font-size: 0.8rem !important;
+	font-weight: 400 !important;
+	color: #ffffff !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.05rem !important;
+	transition: all 0.3s ease !important;
+}
+
+#intro .course-tag.advanced {
+	background: linear-gradient(135deg, rgba(255, 107, 107, 0.2), rgba(78, 205, 196, 0.2)) !important;
+	border-color: rgba(255, 107, 107, 0.4) !important;
+	color: #FF6B6B !important;
+	font-weight: 600 !important;
+	position: relative !important;
+}
+
+#intro .course-tag.advanced::before {
+	content: '★' !important;
+	margin-right: 0.3rem !important;
+	font-size: 0.8rem !important;
+}
+
+#intro .course-tag:hover {
+	background-color: rgba(255, 255, 255, 0.15) !important;
+	border-color: rgba(255, 255, 255, 0.4) !important;
+	transform: translateY(-1px) !important;
+}
+
+#intro .course-tag.advanced:hover {
+	background: linear-gradient(135deg, rgba(255, 107, 107, 0.3), rgba(78, 205, 196, 0.3)) !important;
+	border-color: rgba(255, 107, 107, 0.6) !important;
+	transform: translateY(-2px) !important;
+	box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2) !important;
+}
+
+/* Mobile Responsiveness for Education */
+@media screen and (max-width: 736px) {
+	#intro .education-card {
+		padding: 1.5rem !important;
+		margin-bottom: 2rem !important;
+	}
+	
+	#intro .education-badge {
+		width: 40px !important;
+		height: 40px !important;
+		top: 0.8rem !important;
+		right: 0.8rem !important;
+	}
+	
+	#intro .badge-text {
+		font-size: 0.7rem !important;
+	}
+	
+	#intro .education-header {
+		flex-direction: column !important;
+		align-items: center !important;
+		text-align: center !important;
+		gap: 1rem !important;
+	}
+	
+	#intro .education-logo {
+		width: 60px !important;
+		height: 60px !important;
+	}
+	
+	#intro .degree-header {
+		flex-direction: column !important;
+		align-items: center !important;
+		gap: 0.5rem !important;
+	}
+	
+	#intro .education-info h3 {
+		font-size: 1.2rem !important;
+		text-align: center !important;
+	}
+	
+	#intro .education-details {
+		justify-content: center !important;
+	}
+	
+	#intro .achievement-highlights {
+		justify-content: center !important;
+	}
+	
+	#intro .specialization-grid {
+		grid-template-columns: 1fr !important;
+		gap: 1rem !important;
+	}
+	
+	#intro .coursework-tags {
+		justify-content: center !important;
+	}
+	
+	#intro .coursework-section h4 {
+		text-align: center !important;
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#intro .education-card {
+		padding: 1.2rem !important;
+	}
+	
+	#intro .education-badge {
+		width: 35px !important;
+		height: 35px !important;
+	}
+	
+	#intro .badge-text {
+		font-size: 0.65rem !important;
+	}
+	
+	#intro .education-info h3 {
+		font-size: 1.1rem !important;
+	}
+	
+	#intro .education-details {
+		flex-direction: column !important;
+		align-items: center !important;
+		gap: 0.5rem !important;
+	}
+	
+	#intro .detail-item {
+		font-size: 0.8rem !important;
+		padding: 0.25rem 0.6rem !important;
+	}
+	
+	#intro .achievement {
+		font-size: 0.8rem !important;
+		padding: 0.3rem 0.7rem !important;
+	}
+	
+	#intro .specialization-category {
+		padding: 1rem !important;
+	}
+	
+	#intro .course-tag {
+		font-size: 0.75rem !important;
+		padding: 0.3rem 0.7rem !important;
+	}
+}
