@@ -172,10 +172,6 @@ input, select, textarea {
 		color: inherit;
 	}
 
-	#contact a{
-			color: royalblue;
-	}
-
 	#work a{
 		color: royalblue;
 }
@@ -688,8 +684,8 @@ input, select, textarea {
 
 	#contact img{
 		border-radius: 4px;
-		width: 200px;
-		height: 200px;
+		/* width: 200px;
+		height: 200px; */
 		display: block; 
 		margin: 0 auto;
 	}
@@ -2316,4 +2312,173 @@ input, select, textarea {
 		font-size: 0.75rem !important;
 		padding: 0.3rem 0.7rem !important;
 	}
+}
+
+/* Experience Section */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.experience-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+  position: relative;
+  overflow: hidden;
+}
+.experience-card:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(135,206,235,0.2);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+  transform: translateY(-3px) scale(1.01);
+}
+.experience-logo {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(135,206,235,0.08);
+  border: 2px solid rgba(135,206,235,0.18);
+  box-shadow: 0 2px 8px rgba(135,206,235,0.08);
+}
+.experience-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.experience-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.experience-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.experience-header h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+.experience-dates {
+  font-size: 0.95rem;
+  color: #87CEEB;
+  background: rgba(135,206,235,0.10);
+  border-radius: 16px;
+  padding: 0.25rem 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+.experience-info h4 {
+  font-size: 1.05rem;
+  color: #87CEEB;
+  font-weight: 600;
+  margin: 0 0 0.2rem 0;
+}
+.experience-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+.exp-detail {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 0.2rem 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.exp-type {
+  background: linear-gradient(135deg, #4ECDC4, #45B7D1, #87CEEB) !important;
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  border: none;
+}
+.exp-tech-stack, .exp-awards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.3rem 0 0.3rem 0;
+}
+.exp-tech, .exp-award {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  border-radius: 18px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  transition: background 0.2s;
+}
+.exp-tech:hover, .exp-award:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.exp-award a {
+  color: #fff;
+  text-decoration: underline;
+}
+.other-exp {
+  margin-top: 1.5rem;
+}
+@media screen and (max-width: 900px) {
+  .experience-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.3rem;
+  }
+  .experience-logo {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .experience-list {
+    gap: 1.2rem;
+  }
+  .experience-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .experience-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .experience-header h3 {
+    font-size: 1.05rem;
+  }
+  .experience-info h4 {
+    font-size: 0.95rem;
+  }
+  .exp-tech, .exp-award {
+    font-size: 0.78rem;
+    padding: 0.18rem 0.5rem;
+  }
 }
